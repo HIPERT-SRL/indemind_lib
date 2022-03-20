@@ -1,7 +1,10 @@
 
-find_path(Indemind_INSTALL_DIR include ${CMAKE_CURRENT_LIST_DIR}/../../../)
+#set(Indemind_INSTALL_DIR ${CMAKE_CURRENT_LIST_DIR}/../../../)
+get_filename_component(Indemind_INSTALL_DIR ${CMAKE_CURRENT_LIST_DIR}/../../../ ABSOLUTE)
 
-if(NOT Indemind_INSTALL_DIR STREQUAL "Indemind_INSTALL_DIR-NOTFOUND")
+
+# message("DIR: ${CMAKE_CURRENT_LIST_DIR}/../../../")
+if(EXISTS ${Indemind_INSTALL_DIR}/include/)
 
     message("-- Found Indemind lib ${Indemind_INSTALL_DIR}")
     set(Indemind_INCLUDE_DIRS ${Indemind_INSTALL_DIR}/include/indemind/)
