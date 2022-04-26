@@ -8,7 +8,7 @@ if(EXISTS ${Indemind_INSTALL_DIR}/include/)
 
     message("-- Found Indemind lib ${Indemind_INSTALL_DIR}")
     set(Indemind_INCLUDE_DIRS ${Indemind_INSTALL_DIR}/include/indemind/)
-    file(GLOB Indemind_LIBRARIES ${Indemind_INSTALL_DIR}/lib/indemind/*.so)
+    file(GLOB Indemind_LIBRARIES ${Indemind_INSTALL_DIR}/lib/libusbdriver.so)
     set(Indemind_LIBRARY ${Indemind_LIBRARIES})
     set(Indemind_LIBS ${Indemind_LIBRARIES})
     set(Indemind_FOUND true)
