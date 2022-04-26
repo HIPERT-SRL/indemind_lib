@@ -23,7 +23,7 @@ set(UDEV_RULES_PATH
     "Target directory for udev rule installation. Ensure you have permissions to write to this directory."
 )
 
-install(FILES ${LIB} DESTINATION lib/indemind/)
+install(FILES ${LIB} DESTINATION lib/)
 install(FILES ${HEADERS} DESTINATION include/indemind/)
 install(FILES ${SHARE} DESTINATION share/indemind/cmake/)
 if (UNIX)
