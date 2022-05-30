@@ -26,6 +26,6 @@ set(UDEV_RULES_PATH
 install(FILES ${LIB} DESTINATION lib/)
 install(FILES ${HEADERS} DESTINATION include/indemind/)
 install(FILES ${SHARE} DESTINATION share/indemind/cmake/)
-if (UNIX)
+if (UNIX AND INSTALL_UDEV_SYSTEM)
     install(FILES ${RULES} DESTINATION ${UDEV_RULES_PATH})
 endif()
